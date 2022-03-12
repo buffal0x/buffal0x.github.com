@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
 
@@ -11,17 +11,18 @@ html{
 }
 
 body {
-    background-color: #333;
-    font-family: 'Roboto', sans-serif;
-    height: 100%;
+    background-color: rgb(8, 8, 8);
+    font-family: 'Bebas Neue', cursive;    height: 100%;
     width: 100%;
 
     padding: 0;
     margin: 0;
+
+    color: #05c46b;
 }
 
 .container {
-    width: 80%;
+    width: 70%;
     height: 100%;
     
 
@@ -31,66 +32,92 @@ body {
     margin: 0 auto;
 }
 
-ul {
+nav {
+    font-weight: 100;
+    
+}
+
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  width: 60%;
   margin: 0% auto;
+  font-size: 24px;
 }
 
-.logo {
+nav .logo {
     float: left;
-    color: red;
     text-decoration: none;
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
 }
 
-li {
-  float: right;
-  /*border-right: 1px solid #bbb;*/
-}
+nav li {
+  float: right;}
 
-li:first-child {
+nav li:first-child {
   border-right: none;
 }
 
-li a {
+nav li a {
   display: block;
-  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  color: #05c46b;
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
+nav li a:hover {
+  background-color: #f1f1f1;
+  color: #111;
 }
 
 .topside {
     height: auto;
     margin: 0 auto;
-    color: #f1f1f1;
-    border-bottom: 1px solid #f1f1f1;
+}
+
+.topside-content {
+    margin-top: 80px;
+}
+
+.topside-content .content-hold {
+    text-align: left;
 }
 
 .website {
     width: 75%;
     height: 100%;
     margin: 0 auto;
-    border: 1px solid red;
+    
+}
+
+.content-hold {
+    background-color: #0f1011;
+    padding: 2%;
+    height: 40%;
+    border-radius: 4px;
+    border-bottom:6px solid rgb(0, 0, 0);
+
+
 }
 
 .content {
-    text-align: center;
+  /*  width: 100%;
+    padding: 10px;
+    margin: 10px;
+*/
 }
 
-h1,h2,h3,h4 {
-    padding: 1%;
+h1,h2,h3,h4,p {
+    padding: 0%;
     margin: 0%;
+    margin: 0%;
+}
+
+p {
+
 }
