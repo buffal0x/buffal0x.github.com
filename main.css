@@ -1,38 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
-html, body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+
+html{
     margin: 0;
     padding: 0%;
     height: 100%;
     width: 100%;
+    
 }
 
 body {
-    background: #111111;
-    font-family: 'Fredoka', sans-serif;
-
-    margin: 0;
-    padding: 0%;
+    background-color: #333;
+    font-family: 'Roboto', sans-serif;
     height: 100%;
     width: 100%;
+
+    padding: 0;
+    margin: 0;
 }
 
 .container {
     width: 80%;
     height: 100%;
-    border: 1px solid red;
+    
 
     margin: 0;
-    padding: 0%;
+    padding: 0;
+
+    margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 60%;
+  margin: 0% auto;
+}
+
+.logo {
+    float: left;
+    color: red;
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+li {
+  float: right;
+  /*border-right: 1px solid #bbb;*/
+}
+
+li:first-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
 }
 
 .topside {
-    background-color: blueviolet;
-    height: 20%;
-    border: 1px solid red;
-
+    height: auto;
+    margin: 0 auto;
+    color: #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
 }
 
-.content{
-    color: #f1f1f1;
+.website {
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.content {
     text-align: center;
+}
+
+h1,h2,h3,h4 {
+    padding: 1%;
+    margin: 0%;
 }
