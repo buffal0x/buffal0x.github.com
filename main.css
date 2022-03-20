@@ -38,7 +38,7 @@ nav ul {
   padding: 0;
   overflow: hidden;
   margin: 0% auto;
-  font-size: 24px;
+  font-size: 34px;
 }
 
 nav .logo {
@@ -109,6 +109,7 @@ nav li a:hover {
     height: auto;
     /* width: 80%; */
     box-shadow: 5px 5px 0px 1px #d4d4d4;
+      width: 100%;
 
     
 }
@@ -212,6 +213,52 @@ nav li a:hover {
   right: 0;
 }
 
+.pass {
+  margin: 0 auto;
+  padding: 2%;
+  text-align: center !important; 
+  border-radius: 0%;
+  background-color: #AC94C9;
+  border: 0;
+  border-bottom: 5px solid #74509F;
+  width: 30%;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: 'Roboto Mono', monospace;
+  color: #f5f6fa;
+  cursor: pointer;
+}
+
+.pass:hover {
+  background-color: #143e52;
+  border-bottom: 5px solid #0b2531;
+}
+
+.pass span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.pass span:after {
+  content: '\f06e';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.pass:hover span {
+  padding-right: 25px;
+}
+
+.pass:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 .post p {
   padding: 10px;
 
@@ -222,9 +269,10 @@ nav li a:hover {
 } */
 
 .content {
-  width: 0 auto;
+  margin: 0 auto;
   /* border: 1px solid red; */
   flex: 2 0 21%; 
+  width: 100%;
   margin: 5px;
 }
 
@@ -236,4 +284,52 @@ h1,h2,h3,h4,p {
 
 p {
 
+}
+
+.footer-hold {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+}
+
+.footer-nav {
+  font-size: 34px;
+  background-color: #B33030;
+  box-shadow: 5px 5px 0 0 #621a1a;
+  
+}
+.footer-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin: 0% auto;
+  
+}
+
+.navlist:hover {
+  background-color: #da3838;
+}
+
+.footer-nav li {
+  font-size: 34px;
+  color: #f5f6fa;
+  text-align: right;
+  float: right;
+}
+
+.footer-nav li a {
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  color: #f5f6fa;
+
+}
+
+.footer-nav li:hover {
+  color: #111;
+  font-weight: 300;
+  background-color: #da3838;
 }
