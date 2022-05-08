@@ -27,8 +27,8 @@ body {
 nav {
     font-weight: 100;
     /* border: 1px solid red; */
-    background-color:#f5f6fa;
-    box-shadow: 5px 5px 0px 1px #ccc;
+    background-color:#1D1D1D;
+    border-bottom: 1px solid #00a300;
     font-size: 24px;
 }
 
@@ -56,12 +56,12 @@ nav li a {
   text-align: center;
   text-decoration: none;
   list-style: none;
-  color: #487eb0;
+  color: #00a300;
 }
 
 nav li a:hover {
-  color: #111;
-  font-weight: 300;
+  color: #1e7145;
+  font-weight: bold;
 }
 
 .topside {
@@ -80,7 +80,15 @@ nav li a:hover {
     margin-top: 2%;
     color:#f5f6fa;
     padding: 2%;
-    border-bottom: 10px solid #2c2c54;
+    border-bottom: 1px solid #00a300;
+}
+
+.x1 {
+  background-color: #1d1d1d;
+  background-image: none;
+  width: 100%;
+  margin-bottom: 20px;
+  color: #00a300;
 }
 
 .topside-content .content-hold {
@@ -97,7 +105,7 @@ nav li a:hover {
 }
 
 .website .post-title {
-  color: #487eb0;
+
 }
 
 .content-hold {
@@ -109,7 +117,7 @@ nav li a:hover {
     height: auto;
     /* width: 80%; */
     box-shadow: 5px 5px 0px 1px #d4d4d4;
-      width: 100%;
+    width: 100%;
 
     
 }
@@ -133,7 +141,7 @@ nav li a:hover {
 
 .post {
   padding-top: 2%;
-  border-top: 1px solid #130f40;
+  border-top: 1px solid #f1f1f1;
   width: 50%;
   flex: 1;
   margin: 10px;
@@ -143,8 +151,8 @@ nav li a:hover {
 
 .pform {
   /* border: 1px solid red; */
-  width: 30%;
-  max-width: 30%;
+  width: 50%;
+  max-width: 100%;
   padding: 3%;
   height: auto;
   color: #f5f6fa;
@@ -154,14 +162,14 @@ nav li a:hover {
 
 .pform-title {
   padding: 4%;
-  background-color: #40407a;
+  background-color: #1d1d1d;
   height: auto;
   text-align: center;
-  border-bottom: 2px solid #1a1a33;
+  border: 1px solid #00a300;
 }
 
 .pform-content {
-  background-color: #2c2c54;
+  background-color: #1d1d1d;
   padding: 2%;
   height: 80%;
 }
@@ -296,8 +304,10 @@ p {
 
 .footer-nav {
   font-size: 34px;
-  background-color: #B33030;
-  box-shadow: 5px 5px 0 0 #621a1a;
+  background-color: #1d1d1d;
+  /* box-shadow: 5px 5px 0 0 #13552f; */
+  border-bottom: 1px solid #00a300;
+  padding: 20px;
   
 }
 .footer-nav ul {
@@ -306,7 +316,8 @@ p {
   padding: 0;
   overflow: hidden;
   margin: 0% auto;
-  
+  display: inline-block;
+  border-right: 5px solid #111;
 }
 
 .navlist:hover {
@@ -317,7 +328,7 @@ p {
   font-size: 34px;
   color: #f5f6fa;
   text-align: right;
-  float: right;
+  float: left;
 }
 
 .footer-nav li a {
@@ -328,8 +339,34 @@ p {
 
 }
 
-.footer-nav li:hover {
-  color: #111;
-  font-weight: 300;
-  background-color: #da3838;
+.footer-nav li a:hover {
+  color: #1e7145;
+  /* background-color: #333; */
+}
+
+.sources, .sources a {
+  float: right;
+  color: #00aba9;
+  text-decoration: none;
+}
+
+/* Color library */
+.m1 {
+  color: #f1f1f1;
+}
+.m2 {
+
+}
+.m3 {
+
+}
+
+.s1 {
+  text-decoration: underline;
+}
+.s2 {
+
+}
+.s3 {
+
 }
