@@ -34,17 +34,23 @@ nav {
 
 nav ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 10px;
   overflow: hidden;
   margin: 0% auto;
   font-size: 34px;
+  display: inline-block;
+  /* border: 1px solid blue; */
 }
 
 nav .logo {
     float: left;
     text-decoration: none;
-    text-align: center;
+}
+
+nav .theme {
+  margin-top: -20px;
+  float: right;
 }
 
 nav li {
@@ -59,9 +65,10 @@ nav li a {
   color: #00a300;
 }
 
-nav li a:hover {
+nav .logo:hover {
   color: #1e7145;
   font-weight: bold;
+  transition: font-weight ease-in 0.4s;
 }
 
 .topside {
@@ -234,6 +241,7 @@ p {
 .footer-nav li a:hover {
   color: #1e7145;
   border-bottom: 3px solid #da532c;
+  transition: border-bottom 0.3s ease-in ;
 }
 
 .sources, .sources a {
@@ -277,6 +285,7 @@ p {
   font-size: 24px;
   transition: 0.4s;
   margin-top: 5px;
+  border-bottom: 1px solid #00a300;
 }
 
 .active,
@@ -290,4 +299,157 @@ p {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-out;
+}
+
+/* Toggle light / Toggle dark mode */
+
+.theme {
+  
+}
+
+.dark-theme .container {
+  background-color: rebeccapurple;
+  color: #e5e5e5;
+}
+
+.dark-theme #toggle {
+  background-color: #ffffff;
+}
+
+.dark-theme #toggle:after {
+  background-color: transparent;
+  box-shadow: 10px 10px #15181f;
+  top: -4px;
+  left: 30px;
+}
+
+ /* The switch - the box around the slider */
+ .switch {
+   position: relative;
+   display: inline-block;
+   width: 60px;
+   height: 34px;
+ }
+
+ /* Hide default HTML checkbox */
+ .switch input {
+   opacity: 0;
+   width: 0;
+   height: 0;
+ }
+
+ /* The slider */
+ .slider {
+   position: absolute;
+   cursor: pointer;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #ccc;
+   -webkit-transition: .4s;
+   transition: .4s;
+ }
+
+ .slider:before {
+   position: absolute;
+   content: "";
+   height: 26px;
+   width: 26px;
+   left: 4px;
+   bottom: 4px;
+   background-color: #f5f6fa;
+   -webkit-transition: .4s;
+   transition: .4s;
+ }
+
+ input:checked+.slider {
+   background-color: #333;
+ }
+
+ input:focus+.slider {
+   box-shadow: 0 0 1px #2196F3;
+ }
+
+ input:checked+.slider:before {
+   -webkit-transform: translateX(26px);
+   -ms-transform: translateX(26px);
+   transform: translateX(26px);
+ }
+
+ /* Rounded sliders */
+ .slider.round {
+   border-radius: 34px;
+ }
+
+ .slider.round:before {
+   border-radius: 50%;
+ }
+
+
+
+/* Responsive */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    background: red;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .main {
+    background: green;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .main {
+    background: blue;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .main {
+    background: orange;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .main {
+    background: pink;
+  }
+}
+
+/* Scroll UP */
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 100px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #1d1d1d;
+  color: #f1f1f1;
+  cursor: pointer;
+  padding: 20px;
+  font-size: 24px;
+}
+
+#myBtn:hover {
+  background-color: #000;
+  color: #00a300;
+  /* Add a dark-grey background on hover */
 }
