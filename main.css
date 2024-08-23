@@ -455,3 +455,24 @@ p {
   color: #00a300;
   /* Add a dark-grey background on hover */
 }
+
+
+/* Cards Styles */
+.card-hold {
+  display: flex;
+  width: 100%;
+}
+
+.card {
+  padding: 20px;
+  background-color: #F8EDE3;
+  color: #1D1D1D;
+  height: auto;
+  width: 30%;
+  border: 1px solid #BC9F8B;
+}
+
+.card img {
+  height: auto;
+  width: 80%;
+}
