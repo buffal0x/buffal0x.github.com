@@ -76,14 +76,18 @@
                 <h1>Contact page - Buffal0x emails and such</h1>
                 <p>Contact Me: contact@buffal0x.org</p>
             </div>
-            <div class="post">
-                <div class="content m1">
-                    <p>For business mathers press "Contact" up in the menu</p>
-                </div>
-
-            </div>
+            <form class="contact-form" method="email" action="mailto:contact@buffal0x.org">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+                <input type="submit" value="Send Email" class="sendBtn">
+            </form>
         </div>
     </div>
+
 </div>
 </div>
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>

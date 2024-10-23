@@ -480,3 +480,95 @@ p {
   height: auto;
   width: 80%;
 }
+
+
+/* Contact Styles */
+
+/* Add the contact form styles to the existing stylesheet */
+.contact-form {
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact-form label,input,textarea {
+  padding: 10px;
+  margin: 10px;
+}
+
+.contact-form label {
+
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input[type="email"],
+.contact-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #444;
+}
+
+.sendBtn {
+  background-color: #00a300;
+}
+
+/* Add the switch design to the contact form */
+.switch {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.switch input[type="checkbox"]+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f5f6fa;
+  transition: 0.4s;
+}
+
+.switch input[type="checkbox"]+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #f5f6fa;
+  transition: 0.4s;
+}
+
+.switch input[type="checkbox"]:checked+.slider {
+  background-color: #333;
+}
+
+.switch input[type="checkbox"]:checked+.slider:before {
+  transform: translateX(26px);
+}
+
+.contact-form label span {
+  color: #333;
+}
