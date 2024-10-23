@@ -1,0 +1,10 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Allow serving of images from /img/
+ RewriteRule ^/(img/.*?)(?:\.jpg|\.png|\.gif)$ - [L]
+
+# For any other requests, direct to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?u=$1 [QSA,L]

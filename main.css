@@ -171,11 +171,15 @@ nav .logo:hover {
   background-color: #1d1d1d;
   padding: 2%;
   display: flex;
+  text-align: center;
+  margin: 0 auto;
 }
 
 
 .post p {
   padding: 10px;
+  text-align: center;
+  margin: 0 auto;
 
 }
 
