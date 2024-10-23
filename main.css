@@ -82,7 +82,7 @@ nav .logo:hover {
 
 .topside-content {
     margin: 0;
-    max-height: 70%;
+    max-height: 100%;
     height: auto;
     background-color: #f5f6fa;
     background-image: url(img/bg.jpg);
@@ -304,7 +304,14 @@ p {
     background-color: #1D1D1D;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-out;
+    transition: max-height 0.3s ease-out;
+}
+
+.pgp p {
+  text-align: center;
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
 }
 
 /* Toggle light / Toggle dark mode */
