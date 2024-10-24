@@ -76,7 +76,6 @@ nav .logo:hover {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    /* border: 1px solid red; */
     
 }
 
@@ -91,7 +90,6 @@ nav .logo:hover {
     color:#f5f6fa;
     padding: 2%;
     border-bottom: 1px solid #00a300;
-    /* border: 1px solid red; */
 
     display: flex;
     align-items: flex-start;
@@ -101,6 +99,7 @@ nav .logo:hover {
 
 .x1 {
   background-color: #1d1d1d;
+  box-shadow: 3px 0px 0px 3px rgba(0, 0, 0, 0.2);
   background-image: none;
   width: 100%;
   color: #00a300;
@@ -308,10 +307,10 @@ p {
 }
 
 .pgp p {
-  text-align: center;
   height: 100%;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
+  padding: 10px;
 }
 
 /* Toggle light / Toggle dark mode */
